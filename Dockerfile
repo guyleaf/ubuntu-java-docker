@@ -18,4 +18,6 @@ RUN apt-get update && apt-get install -y nano wget software-properties-common op
 
 COPY profile.d/java.sh /etc/profile.d/
 
+ENV JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+
 CMD ["/bin/bash"]
